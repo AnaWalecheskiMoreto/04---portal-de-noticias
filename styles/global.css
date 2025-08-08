@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--font-family);
 }
 
 :root {
@@ -12,7 +13,7 @@
     --text-color-primary: #F1F5F9 ;
     --text-color-secondary: #CBD5E1 ;
 
-    --font-family: 'Archivo', sans-serif; 
+    --font-family: 'Archivo'; 
     --h1: 800 24px/135% var(--font-family);
     --h2: 800 16px/140% var(--font-family);
     --h3: 800 14px/140% var(--font-family);
@@ -24,6 +25,7 @@
 body {
     color: var(--text-color-primary);
     background-color: var(--bg-color);
+    
 }
 
 a {
@@ -37,4 +39,18 @@ a:hover {
 
 h1, h2, h3 {
     font: inherit;
+}
+
+.container {
+    max-width: 1280px;
+    padding-inline: 32px;
+    margin-inline-start: auto;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-flow-col {
+    grid-auto-flow: column;
 }
