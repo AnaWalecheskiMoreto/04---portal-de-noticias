@@ -1,5 +1,5 @@
 #primary {
-
+    justify-content: space-between;
     padding-block: 20px;
 
     div {
@@ -23,4 +23,24 @@
     border: solid 1px var(--stroke-color);
     border-inline: none;
     justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+    #primary {
+        width: 100%;
+        margin: 0;
+        justify-content: space-between;
+
+        & strong {
+            display: none; 
+        }
+    }
+
+    #secondary {
+        display: flex;
+        gap: 16px;
+        overflow-x: auto;      
+        white-space: nowrap;   
+        scrollbar-width: none;
+    }
 }
